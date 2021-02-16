@@ -1,0 +1,38 @@
+<div class="parent">
+    <div class="flex title-card">
+        <div class="w-2/4">
+            <span class="title">Never Stop Exploring Cars</span>
+        </div>
+        <div>
+            <div class="flex slider mb-8 custom-scorll-carousel" id="slider">
+                <app-car-card [src]="'../../assets/benz.jpg'" [name]="'Benz'"></app-car-card>
+                <app-car-card [src]="'../../assets/ferrari.jpg'" [name]="'Ferrari'"></app-car-card>
+                <app-car-card [src]="'../../assets/audi.jpg'" [name]="'Audi'"></app-car-card>
+                <app-car-card [src]="'../../assets/mustang.jpg'" [name]="'Mustang'"></app-car-card>
+                <app-car-card [src]="'../../assets/lamborghini.jpg'" [name]="'Lambo'"></app-car-card>
+                <app-car-card [src]="'../../assets/porsche.jpg'" [name]="'Porshce'"></app-car-card>
+            </div>
+            <div class="flex flex-between flex-center flex-middle">
+                <div class="flex mx-4">
+                    <button mat-icon-button (click)="prev()" class="navigation-button flex flex-center mat-icon-button p-2">
+                        <mat-icon>keyboard_arrow_left</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="next()" class="navigation-button ml-2 flex flex-center mat-icon-button p-2">
+                        <mat-icon>keyboard_arrow_right</mat-icon>
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <span class="index-value">01</span>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <div>
+        <video autoplay muted loop id="myVideo" class="video-container">
+            <source src="../../assets/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div> -->
+    
+</div>
+

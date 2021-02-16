@@ -1,0 +1,58 @@
+<div class="backgroundImage">
+    <div class="details-container flex flex-between md:p-20 p-8">
+        <div class="p-4 w-3/4 details-box">
+            <span class="title">Only those who dare, truly live</span>
+            <div class="flex flex-middle p-2">
+                <button mat-icon-button class="flex flex-center flex-middle mr-2 play-button">
+                    <mat-icon>play_arrow</mat-icon>
+                </button>
+                <span class="font-audio">Watch Film</span>
+            </div>
+            <div class="flex flex-between p-2 w-1/2">
+                <div class="flex flex-col">
+                    <span class="font-audio">Max Power</span>
+                    <span class="font-audio">350 HP</span> 
+                </div>
+                <div class="flex flex-col mr-8">
+                    <span class="font-audio">Max Speed</span>
+                    <span class="font-audio">350 MPH</span> 
+                </div>
+            </div>
+            <div class="flex flex-between p-2 w-1/2">
+                <div class="flex flex-col">
+                    <span class="font-audio">Acceleration</span>
+                    <span class="font-audio">5.5 sec</span> 
+                </div>
+                <div class="flex flex-col mr-1">
+                    <span class="font-audio">Engine Layout</span>
+                    <span class="font-audio">V6</span> 
+                </div>
+            </div>
+        </div> 
+        <div class="flex flex-center flex-col">
+            <div class="outerdot flex my-2 flex-center flex-middle" [ngClass]="{'border-animation': indexImage === 0}">
+                <span class="dot"></span>
+            </div>
+            <div class="my-2 outerdot flex flex-center flex-middle" [ngClass]="{'border-animation': indexImage === 1}">
+                <span class="dot"></span>
+            </div>
+            <div class="my-2 outerdot flex flex-center flex-middle" [ngClass]="{'border-animation': indexImage === 2}">
+                <span class="dot"></span>
+            </div>
+            <div class="my-2 outerdot flex flex-center flex-middle" [ngClass]="{'border-animation': indexImage === 3}">
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>  
+    <img [src] = 'activeImage' class="imageBackground"/>
+    
+</div>
+<div class="slider custom-scorll-carousel" cdkDropList (cdkDropListDropped)="drop($event)" >
+    <mat-card class="car-card m-4 padding-remove" *ngFor="let item of carlist" cdkDrag>
+        <img [src]='item.imageSrc' />
+        <div class="flex flex-col p-4">
+            <span class="font-audio text-white">{{item.year}}</span>
+            <span class="font-audio text-white">{{item.name}}</span>
+        </div>
+    </mat-card>
+</div>
