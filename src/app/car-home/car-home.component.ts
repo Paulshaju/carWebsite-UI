@@ -9,22 +9,22 @@ import { carYearDetails } from '../data-model.model';
 })
 export class CarHomeComponent implements OnInit {
 
-  backgroundIMages = ['../../assets/benz.jpg', '../../assets/ferrari.jpg', '../../assets/audi.jpg', '../../assets/mustang.jpg']
+  backgroundIMages = ['assets/benz.jpg', 'assets/ferrari.jpg', 'assets/audi.jpg', 'assets/mustang.jpg']
   activeImage = ''
   indexImage = -1
 
   carlist: carYearDetails[] = [
-    { id: 1, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 2, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 3, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 4, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 5, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 6, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 7, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 8, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 9, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 10, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
-    { id: 11, name: "Ferrari 488", imageSrc: "../../assets/ferrari.jpg", year: "1971" },
+    { id: 1, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 2, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 3, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 4, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 5, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 6, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 7, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 8, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 9, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 10, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
+    { id: 11, name: "Ferrari 488", imageSrc: "assets/ferrari.jpg", year: "1971" },
   ]
 
   constructor() { }
