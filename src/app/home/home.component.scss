@@ -12,6 +12,11 @@
     top: 100px;
     left: 5%;
     z-index: 1000;
+    @include breakpoint-lt-m {
+        position: initial;
+        left: 0%;
+        display: block !important;
+      }
 }
 .title{
     font-size: 70px;
@@ -34,7 +39,7 @@
     max-width: 650px;
 	overflow-y: hidden;
 	overflow-x: scroll !important;
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 .navigation-button{
     color: white;
@@ -48,6 +53,9 @@
     height: 0%;
     border: 1px solid white;
     border-radius: 10px;
+    @include breakpoint-lt-m {
+        display: none !important;
+      }
 }
 .index-value{
     font-family: "Audiowide";

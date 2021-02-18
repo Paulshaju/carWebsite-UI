@@ -7,7 +7,9 @@
     background-position: center;
     position: relative;
     z-index: 1;  
+   
 }
+
 .imageBackground{
     position: absolute;
     min-width: 100%;
@@ -30,6 +32,7 @@
         opacity: 0;
     }
 }
+
 .dot {
     height: 5px;
     width: 5px;
@@ -57,7 +60,11 @@
         
     }
 }
-
+.dot-container{
+    @include breakpoint-lt-m {
+        flex-direction: row !important;
+    }
+}
 
 .title{
     font-size: 70px;
@@ -66,7 +73,8 @@
     color: white;
     position: relative;
     @include breakpoint-lt-m {
-        font-size: 60px;
+        font-size: 20px;
+        line-height: 30px;
       }
 
 }
@@ -74,10 +82,19 @@
     position: absolute;
     top: 10%;
     z-index: 1;
+    @include breakpoint-lt-m {
+        display: block !important;
+        padding: 1rem !important;
+        width: 100% !important;
+        top: 25% !important;
+      }
 }
 .details-box{
     border-radius: 10px;
     background-color: rgb(0 0 0 / 61%);
+    @include breakpoint-lt-m {
+        width: 100% !important;
+      }
 }
 .play-button{
     border-radius: 50%;
